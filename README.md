@@ -10,7 +10,7 @@ Wraps the inline content with `ins` and `del` tags.
 Installation
 ------------
 
-    pip install git+git://github.com/aleray/mdx_del_ins.git
+    pip install git+git://github.com/Saevon/mdx_del_ins.git
 
 
 Usage
