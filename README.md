@@ -1,6 +1,9 @@
 Del/Ins Extension for Python-Markdown
 =====================================
 
+(Forked from https://github.com/aleray/mdx_del_ins)
+This fork uses -- instead of ~~ to frame deleted content
+
 Wraps the inline content with `ins` and `del` tags.
 
 
@@ -14,7 +17,7 @@ Usage
 -----
 
     >>> import markdown
-    >>> src = """This is ++added content++ and this is ~~deleted content~~""" 
+    >>> src = """This is ++added content++ and this is --deleted content--""" 
     >>> html = markdown.markdown(src, ['del_ins'])
     >>> print(html)
     <p>This is <ins>added content</ins> and this is <del>deleted content</del>
