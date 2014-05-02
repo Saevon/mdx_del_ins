@@ -12,7 +12,7 @@ Usage
 -----
 
     >>> import markdown
-    >>> src = """This is ++added content++ and this is ~~deleted content~~""" 
+    >>> src = """This is ++added content++ and this is --deleted content--""" 
     >>> html = markdown.markdown(src, ['del_ins'])
     >>> print(html)
     <p>This is <ins>added content</ins> and this is <del>deleted content</del>
@@ -40,7 +40,7 @@ import markdown
 from markdown.inlinepatterns import SimpleTagPattern
 
 
-DEL_RE = r"(\~\~)(.+?)(\~\~)"
+DEL_RE = r"(--)(.+?)(--)"
 INS_RE = r"(\+\+)(.+?)(\+\+)"
 
 
